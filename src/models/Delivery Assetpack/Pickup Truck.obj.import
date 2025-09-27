@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bs85cmspoi62q"
+path="res://.godot/imported/Pickup Truck.obj-46167b10c133be1e2ecc79a1c414e056.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Pickup Truck.obj-46167b10c133be1e2ecc79a1c414e056.mesh"]
+
+source_file="res://models/Delivery Assetpack/Pickup Truck.obj"
+dest_files=["res://.godot/imported/Pickup Truck.obj-46167b10c133be1e2ecc79a1c414e056.mesh", "res://.godot/imported/Pickup Truck.obj-46167b10c133be1e2ecc79a1c414e056.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

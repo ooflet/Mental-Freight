@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5d7w52tx6jwh"
+path="res://.godot/imported/road-slant-high.obj-8af82bde2f657f5f5f4f996fe6d63663.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road-slant-high.obj-8af82bde2f657f5f5f4f996fe6d63663.mesh"]
+
+source_file="res://models/Roads/road-slant-high.obj"
+dest_files=["res://.godot/imported/road-slant-high.obj-8af82bde2f657f5f5f4f996fe6d63663.mesh", "res://.godot/imported/road-slant-high.obj-8af82bde2f657f5f5f4f996fe6d63663.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

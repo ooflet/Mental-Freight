@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://7kgjg0bt7te4"
+path="res://.godot/imported/light-square-double.obj-154578d750bfff1dbbd63598951150d0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/light-square-double.obj-154578d750bfff1dbbd63598951150d0.mesh"]
+
+source_file="res://models/Roads/light-square-double.obj"
+dest_files=["res://.godot/imported/light-square-double.obj-154578d750bfff1dbbd63598951150d0.mesh", "res://.godot/imported/light-square-double.obj-154578d750bfff1dbbd63598951150d0.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4cxq3lqf46lp"]
+
+[ext_resource type="ArrayMesh" path="res://models/OBJ format/building-a.obj" id="1_1bvp3"]
+[ext_resource type="ArrayMesh" path="res://models/OBJ format/building-b.obj" id="2_lquwl"]
+[ext_resource type="ArrayMesh" path="res://models/OBJ format/building-e.obj" id="3_7mycd"]
+[ext_resource type="PackedScene" uid="uid://byn0xdr5kqtn1" path="res://models/Truck/scene.gltf" id="4_272bh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0e48y"]
+albedo_color = Color(0.19607843, 0.19607843, 0.19607843, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Baseplate" type="CSGBox3D" parent="."]
+size = Vector3(1000, 0.1, 1000)
+material = SubResource("StandardMaterial3D_0e48y")
+
+[node name="BuildingA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+mesh = ExtResource("1_1bvp3")
+
+[node name="BuildingB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.05, 0)
+mesh = ExtResource("2_lquwl")
+
+[node name="BuildingE" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.05, -2)
+mesh = ExtResource("3_7mycd")
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("4_272bh")]
+transform = Transform3D(-1.0927847e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.0927847e-08, -0.1447053, 0.25, -0.7714085)
