@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crkmmm6d2q8us"
+path="res://.godot/imported/train-carriage-coal.obj-07d44090955d995850a9c2ad2eb5e510.mesh"
+
+[deps]
+
+files=["res://.godot/imported/train-carriage-coal.obj-07d44090955d995850a9c2ad2eb5e510.mesh"]
+
+source_file="res://models/Train/train-carriage-coal.obj"
+dest_files=["res://.godot/imported/train-carriage-coal.obj-07d44090955d995850a9c2ad2eb5e510.mesh", "res://.godot/imported/train-carriage-coal.obj-07d44090955d995850a9c2ad2eb5e510.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

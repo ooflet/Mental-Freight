@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://7vr54vegm008"
+path="res://.godot/imported/train-carriage-wood.obj-cf4a1d3c3d6536a79bf0b16c493efe70.mesh"
+
+[deps]
+
+files=["res://.godot/imported/train-carriage-wood.obj-cf4a1d3c3d6536a79bf0b16c493efe70.mesh"]
+
+source_file="res://models/Train/train-carriage-wood.obj"
+dest_files=["res://.godot/imported/train-carriage-wood.obj-cf4a1d3c3d6536a79bf0b16c493efe70.mesh", "res://.godot/imported/train-carriage-wood.obj-cf4a1d3c3d6536a79bf0b16c493efe70.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
