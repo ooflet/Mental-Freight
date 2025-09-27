@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://d4cxq3lqf46lp"]
+[gd_scene load_steps=28 format=3 uid="uid://d4cxq3lqf46lp"]
 
 [ext_resource type="MeshLibrary" uid="uid://crwpajrpg8nws" path="res://train.tres" id="1_0odxb"]
 [ext_resource type="MeshLibrary" uid="uid://beevc4tctoimq" path="res://industrial.tres" id="1_4c57u"]
@@ -16,6 +16,7 @@
 [ext_resource type="ArrayMesh" uid="uid://baf100iyr8vga" path="res://models/Buildings/building-m.obj" id="11_074og"]
 [ext_resource type="ArrayMesh" uid="uid://dge8fp1lqgsb0" path="res://models/Industrial Buildings/chimney-large.obj" id="12_cegan"]
 [ext_resource type="ArrayMesh" uid="uid://0cwvcuqjmn86" path="res://models/Buildings/building-skyscraper-d.obj" id="12_dg77c"]
+[ext_resource type="PackedScene" uid="uid://cg3m5qnyxjev4" path="res://Sky/sky.tscn" id="13_ycdy4"]
 [ext_resource type="ArrayMesh" uid="uid://qxy6d3ekhd2m" path="res://models/Roads/road-split.obj" id="15_lswn8"]
 [ext_resource type="ArrayMesh" uid="uid://cfr22balnew0w" path="res://models/Buildings/detail-awning-wide.obj" id="16_82xsv"]
 [ext_resource type="ArrayMesh" uid="uid://chnhlvuvs31uf" path="res://models/Roads/road-curve-intersection.obj" id="17_getpj"]
@@ -28,6 +29,8 @@
 [ext_resource type="PackedScene" uid="uid://bu11lkr58eh34" path="res://truck.tscn" id="26_lswn8"]
 
 [node name="Node3D" type="Node3D"]
+
+[node name="Sky" parent="." instance=ExtResource("13_ycdy4")]
 
 [node name="Train" type="GridMap" parent="."]
 mesh_library = ExtResource("1_0odxb")
