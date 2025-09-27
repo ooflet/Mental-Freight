@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dv75a8qjc1g5c"
+path="res://.godot/imported/stump_roundDetailed.obj-b716af910f0863df72a2d65db7e0f668.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stump_roundDetailed.obj-b716af910f0863df72a2d65db7e0f668.mesh"]
+
+source_file="res://models/Foliage/stump_roundDetailed.obj"
+dest_files=["res://.godot/imported/stump_roundDetailed.obj-b716af910f0863df72a2d65db7e0f668.mesh", "res://.godot/imported/stump_roundDetailed.obj-b716af910f0863df72a2d65db7e0f668.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

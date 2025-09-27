@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dp5c4c0roc1s6"
+path="res://.godot/imported/hanging_moss.obj-47831e681d080006280e2ba56f72fbef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hanging_moss.obj-47831e681d080006280e2ba56f72fbef.mesh"]
+
+source_file="res://models/Foliage/hanging_moss.obj"
+dest_files=["res://.godot/imported/hanging_moss.obj-47831e681d080006280e2ba56f72fbef.mesh", "res://.godot/imported/hanging_moss.obj-47831e681d080006280e2ba56f72fbef.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

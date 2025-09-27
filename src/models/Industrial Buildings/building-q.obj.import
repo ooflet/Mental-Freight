@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://lv6f7auusmjg"
+path="res://.godot/imported/building-q.obj-76f8d8c0aec2e56d4fe29f3df128ad2d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building-q.obj-76f8d8c0aec2e56d4fe29f3df128ad2d.mesh"]
+
+source_file="res://models/Industrial Buildings/building-q.obj"
+dest_files=["res://.godot/imported/building-q.obj-76f8d8c0aec2e56d4fe29f3df128ad2d.mesh", "res://.godot/imported/building-q.obj-76f8d8c0aec2e56d4fe29f3df128ad2d.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

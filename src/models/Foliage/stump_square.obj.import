@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://chtpr1mcl3e0i"
+path="res://.godot/imported/stump_square.obj-dcf867b4c71b5f45a76887a9d6f4bb5f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stump_square.obj-dcf867b4c71b5f45a76887a9d6f4bb5f.mesh"]
+
+source_file="res://models/Foliage/stump_square.obj"
+dest_files=["res://.godot/imported/stump_square.obj-dcf867b4c71b5f45a76887a9d6f4bb5f.mesh", "res://.godot/imported/stump_square.obj-dcf867b4c71b5f45a76887a9d6f4bb5f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://wwq71l7fm13q"
+path="res://.godot/imported/fence_simple.obj-035ee501b3c197a82f7f30e6c1f5ac3f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_simple.obj-035ee501b3c197a82f7f30e6c1f5ac3f.mesh"]
+
+source_file="res://models/Foliage/fence_simple.obj"
+dest_files=["res://.godot/imported/fence_simple.obj-035ee501b3c197a82f7f30e6c1f5ac3f.mesh", "res://.godot/imported/fence_simple.obj-035ee501b3c197a82f7f30e6c1f5ac3f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

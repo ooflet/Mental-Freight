@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvix3b8j3gbg6"
+path="res://.godot/imported/stone_largeC.obj-d0248c5197348e8a05308d52d40cda5e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone_largeC.obj-d0248c5197348e8a05308d52d40cda5e.mesh"]
+
+source_file="res://models/Foliage/stone_largeC.obj"
+dest_files=["res://.godot/imported/stone_largeC.obj-d0248c5197348e8a05308d52d40cda5e.mesh", "res://.godot/imported/stone_largeC.obj-d0248c5197348e8a05308d52d40cda5e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcnp61m8saxwy"
+path="res://.godot/imported/rock_largeF.obj-597c1ee80d41e70507d71019ebb31eaf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_largeF.obj-597c1ee80d41e70507d71019ebb31eaf.mesh"]
+
+source_file="res://models/Foliage/rock_largeF.obj"
+dest_files=["res://.godot/imported/rock_largeF.obj-597c1ee80d41e70507d71019ebb31eaf.mesh", "res://.godot/imported/rock_largeF.obj-597c1ee80d41e70507d71019ebb31eaf.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

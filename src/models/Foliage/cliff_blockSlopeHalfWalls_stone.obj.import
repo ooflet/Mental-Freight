@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bv7tj2ploicj6"
+path="res://.godot/imported/cliff_blockSlopeHalfWalls_stone.obj-052d6a52791cf7dace160797a831351c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_blockSlopeHalfWalls_stone.obj-052d6a52791cf7dace160797a831351c.mesh"]
+
+source_file="res://models/Foliage/cliff_blockSlopeHalfWalls_stone.obj"
+dest_files=["res://.godot/imported/cliff_blockSlopeHalfWalls_stone.obj-052d6a52791cf7dace160797a831351c.mesh", "res://.godot/imported/cliff_blockSlopeHalfWalls_stone.obj-052d6a52791cf7dace160797a831351c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

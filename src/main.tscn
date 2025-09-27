@@ -1,30 +1,78 @@
-[gd_scene load_steps=6 format=3 uid="uid://d4cxq3lqf46lp"]
+[gd_scene load_steps=11 format=3 uid="uid://d4cxq3lqf46lp"]
 
-[ext_resource type="ArrayMesh" path="res://models/OBJ format/building-a.obj" id="1_1bvp3"]
-[ext_resource type="ArrayMesh" path="res://models/OBJ format/building-b.obj" id="2_lquwl"]
-[ext_resource type="ArrayMesh" path="res://models/OBJ format/building-e.obj" id="3_7mycd"]
-[ext_resource type="PackedScene" uid="uid://byn0xdr5kqtn1" path="res://models/Truck/scene.gltf" id="4_272bh"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0e48y"]
-albedo_color = Color(0.19607843, 0.19607843, 0.19607843, 1)
+[ext_resource type="MeshLibrary" uid="uid://beevc4tctoimq" path="res://industrial.tres" id="1_4c57u"]
+[ext_resource type="MeshLibrary" uid="uid://csivfkl1s8u6w" path="res://buildings.tres" id="2_efxa6"]
+[ext_resource type="MeshLibrary" uid="uid://hjc1y4hwnmfj" path="res://road.tres" id="3_dg77c"]
+[ext_resource type="ArrayMesh" uid="uid://brhjt4vqn50rj" path="res://models/Industrial Buildings/chimney-small.obj" id="4_ycdy4"]
+[ext_resource type="ArrayMesh" uid="uid://bxoodtu8sdjpo" path="res://models/Industrial Buildings/building-m.obj" id="5_w48qg"]
+[ext_resource type="ArrayMesh" uid="uid://b4jxi3hh46uqi" path="res://models/Industrial Buildings/building-c.obj" id="6_vivmo"]
+[ext_resource type="ArrayMesh" uid="uid://dsypk7whp3i27" path="res://models/Roads/road-bend.obj" id="7_2cqfq"]
+[ext_resource type="ArrayMesh" uid="uid://bf15xalkjj61i" path="res://models/Roads/bridge-pillar-wide.obj" id="8_yaehf"]
+[ext_resource type="ArrayMesh" uid="uid://dn6noqc3ildi2" path="res://models/Roads/road-straight.obj" id="9_074og"]
+[ext_resource type="ArrayMesh" uid="uid://l01xeuvtymk0" path="res://models/Roads/road-curve.obj" id="10_cegan"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Baseplate" type="CSGBox3D" parent="."]
-size = Vector3(1000, 0.1, 1000)
-material = SubResource("StandardMaterial3D_0e48y")
+[node name="Industrial Buildings" type="GridMap" parent="."]
+mesh_library = ExtResource("1_4c57u")
+cell_size = Vector3(1, 1.1, 1)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(65534, 0, 15, 0, 0, 18, 65531, 0, 0, 65529, 65534, 1441803, 65529, 65532, 1048586, 65529, 65531, 1048586)
+}
 
-[node name="BuildingA" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
-mesh = ExtResource("1_1bvp3")
+[node name="Buildings" type="GridMap" parent="."]
+mesh_library = ExtResource("2_efxa6")
+cell_size = Vector3(1, 1.1, 1)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(65534, 0, 15, 0, 0, 18, 65533, 65535, 655382, 65534, 65535, 655382, 65535, 65535, 655382)
+}
 
-[node name="BuildingB" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.05, 0)
-mesh = ExtResource("2_lquwl")
+[node name="Roads" type="GridMap" parent="."]
+mesh_library = ExtResource("3_dg77c")
+cell_size = Vector3(1, 1.1, 1)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(65532, 65534, 49, 65531, 65534, 66, 65534, 65534, 655409, 65530, 65534, 1048645, 65530, 65533, 1048645, 65530, 65532, 1048645, 65530, 65531, 1048645, 65531, 65535, 1048645, 65530, 65535, 1048645, 65532, 65535, 1048645, 65531, 65533, 1048645, 65531, 65532, 1048645, 65531, 65531, 1048645, 65529, 65533, 1048645, 65529, 65535, 1048645, 65530, 0, 1048645, 65532, 65533, 1048645, 65532, 65532, 1048645, 65532, 65531, 1048645, 0, 65534, 655377, 65535, 65534, 655424, 65533, 65535, 655429, 65534, 65535, 655429, 65535, 65535, 655429, 65533, 65533, 655429, 65534, 65533, 655429, 65535, 65533, 655429, 0, 65535, 655429, 1, 65535, 655429, 0, 65533, 655429, 1, 65533, 655429, 65532, 0, 655429, 65533, 0, 655429, 65535, 0, 655429, 1, 0, 655429, 1, 65534, 655424, 2, 65534, 655417, 1, 1, 1441861, 1, 2, 1441861, 1, 3, 1441861)
+}
 
-[node name="BuildingE" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.05, -2)
-mesh = ExtResource("3_7mycd")
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.355582, -106.93752, 3.1866665)
+size = Vector3(1000, 1, 1000)
 
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("4_272bh")]
-transform = Transform3D(-1.0927847e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.0927847e-08, -0.1447053, 0.25, -0.7714085)
+[node name="ChimneySmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.070322, 1.2285929, 0.45714688)
+mesh = ExtResource("4_ycdy4")
+
+[node name="BuildingM" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.9360998, 0, 0, 0, 2.107944, 0, 0, 0, 1, -6.954493, 0, 0.5398145)
+mesh = ExtResource("5_w48qg")
+
+[node name="BuildingC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3141874, 0, 0, 0, 1.8573581, 0, 0, 0, 1, -4.6173277, 0, -3.8852339)
+mesh = ExtResource("6_vivmo")
+
+[node name="RoadBend" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4976351, -2.3841858e-07, -0.9983368)
+mesh = ExtResource("7_2cqfq")
+
+[node name="BridgePillarWide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 2.284473, 0, 0, 0, 1, -2.4258566, 0, -2.1345322)
+mesh = ExtResource("8_yaehf")
+
+[node name="BridgePillarWide" type="MeshInstance3D" parent="BridgePillarWide"]
+transform = Transform3D(0.8790174, 0, 0, 0, 0.9913584, 0, 0, 0, 1, -0.019600153, 0, 1.1880974)
+mesh = ExtResource("8_yaehf")
+
+[node name="RoadStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.8638056e-07, 0, -0.9999998, 0, 0.9999994, 0, 4.2638903, 0, -4.371138e-08, 3.496229, 2.3841858e-07, 1.5373068)
+mesh = ExtResource("9_074og")
+
+[node name="RoadCurve" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.0013957, 2.3841858e-07, -2.5038338)
+mesh = ExtResource("10_cegan")
+
+[node name="RoadStraight2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.5923513e-07, 0, -0.9999999, 0, 1, 0, 3.6428752, 0, -4.3711385e-08, 4.4988604, 0, -5.33099)
+mesh = ExtResource("9_074og")

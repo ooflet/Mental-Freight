@@ -1,0 +1,129 @@
+[gd_scene load_steps=26 format=3 uid="uid://cxowciavf7xjd"]
+
+[ext_resource type="ArrayMesh" uid="uid://cpabywvn6fjo" path="res://models/Industrial Buildings/building-a.obj" id="1_eqw0g"]
+[ext_resource type="ArrayMesh" uid="uid://b2ntggro2ipjf" path="res://models/Industrial Buildings/building-b.obj" id="2_uxks5"]
+[ext_resource type="ArrayMesh" uid="uid://b4jxi3hh46uqi" path="res://models/Industrial Buildings/building-c.obj" id="3_2lkkk"]
+[ext_resource type="ArrayMesh" uid="uid://b7cnriyg1ca0a" path="res://models/Industrial Buildings/building-d.obj" id="4_p4n8f"]
+[ext_resource type="ArrayMesh" uid="uid://cjo04hbjlfked" path="res://models/Industrial Buildings/building-e.obj" id="5_ie3qr"]
+[ext_resource type="ArrayMesh" uid="uid://dhe8rrkq31xl7" path="res://models/Industrial Buildings/building-f.obj" id="6_wg8b0"]
+[ext_resource type="ArrayMesh" uid="uid://c7sryxawhnysu" path="res://models/Industrial Buildings/building-g.obj" id="7_u6b0d"]
+[ext_resource type="ArrayMesh" uid="uid://ca16846v215m6" path="res://models/Industrial Buildings/building-h.obj" id="8_44twr"]
+[ext_resource type="ArrayMesh" uid="uid://jq34s286ns2l" path="res://models/Industrial Buildings/building-i.obj" id="9_ltxcm"]
+[ext_resource type="ArrayMesh" uid="uid://cdjxfp0yrmqbq" path="res://models/Industrial Buildings/building-j.obj" id="10_e8gin"]
+[ext_resource type="ArrayMesh" uid="uid://bmv84sthw8gbu" path="res://models/Industrial Buildings/building-k.obj" id="11_5mu3k"]
+[ext_resource type="ArrayMesh" uid="uid://bqhd8x486elsh" path="res://models/Industrial Buildings/building-l.obj" id="12_inwvk"]
+[ext_resource type="ArrayMesh" uid="uid://bxoodtu8sdjpo" path="res://models/Industrial Buildings/building-m.obj" id="13_jpnef"]
+[ext_resource type="ArrayMesh" uid="uid://di48hxrbkefri" path="res://models/Industrial Buildings/building-n.obj" id="14_ta4b4"]
+[ext_resource type="ArrayMesh" uid="uid://c13g1rpiar4tu" path="res://models/Industrial Buildings/building-o.obj" id="15_qkasf"]
+[ext_resource type="ArrayMesh" uid="uid://c5qlx0pwrkkon" path="res://models/Industrial Buildings/building-p.obj" id="16_xcraa"]
+[ext_resource type="ArrayMesh" uid="uid://lv6f7auusmjg" path="res://models/Industrial Buildings/building-q.obj" id="17_4tkx3"]
+[ext_resource type="ArrayMesh" uid="uid://bqhwcmacjq3p5" path="res://models/Industrial Buildings/building-r.obj" id="18_f3dkx"]
+[ext_resource type="ArrayMesh" uid="uid://dswpmx4oy04cy" path="res://models/Industrial Buildings/building-s.obj" id="19_t5hry"]
+[ext_resource type="ArrayMesh" uid="uid://cbh3embqrue7l" path="res://models/Industrial Buildings/building-t.obj" id="20_31xxv"]
+[ext_resource type="ArrayMesh" uid="uid://b36kd48x75grb" path="res://models/Industrial Buildings/chimney-basic.obj" id="21_kq5kr"]
+[ext_resource type="ArrayMesh" uid="uid://dge8fp1lqgsb0" path="res://models/Industrial Buildings/chimney-large.obj" id="22_171oy"]
+[ext_resource type="ArrayMesh" uid="uid://ci7m4isanmodd" path="res://models/Industrial Buildings/chimney-medium.obj" id="23_f4ynf"]
+[ext_resource type="ArrayMesh" uid="uid://brhjt4vqn50rj" path="res://models/Industrial Buildings/chimney-small.obj" id="24_p5own"]
+[ext_resource type="ArrayMesh" uid="uid://dh58apr8erny2" path="res://models/Industrial Buildings/detail-tank.obj" id="25_0otvs"]
+
+[node name="Industrial" type="Node3D"]
+
+[node name="BuildingA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("1_eqw0g")
+
+[node name="BuildingB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("2_uxks5")
+
+[node name="BuildingC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("3_2lkkk")
+
+[node name="BuildingD" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("4_p4n8f")
+
+[node name="BuildingE" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("5_ie3qr")
+
+[node name="BuildingF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("6_wg8b0")
+
+[node name="BuildingG" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("7_u6b0d")
+
+[node name="BuildingH" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("8_44twr")
+
+[node name="BuildingI" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("9_ltxcm")
+
+[node name="BuildingJ" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("10_e8gin")
+
+[node name="BuildingK" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("11_5mu3k")
+
+[node name="BuildingL" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("12_inwvk")
+
+[node name="BuildingM" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("13_jpnef")
+
+[node name="BuildingN" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("14_ta4b4")
+
+[node name="BuildingO" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("15_qkasf")
+
+[node name="BuildingP" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("16_xcraa")
+
+[node name="BuildingQ" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("17_4tkx3")
+
+[node name="BuildingR" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("18_f3dkx")
+
+[node name="BuildingS" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("19_t5hry")
+
+[node name="BuildingT" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("20_31xxv")
+
+[node name="ChimneyBasic" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("21_kq5kr")
+
+[node name="ChimneyLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("22_171oy")
+
+[node name="ChimneyMedium" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("23_f4ynf")
+
+[node name="ChimneySmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("24_p5own")
+
+[node name="DetailTank" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011057138, 0, 0.07801819)
+mesh = ExtResource("25_0otvs")
