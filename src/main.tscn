@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://d4cxq3lqf46lp"]
+[gd_scene load_steps=27 format=3 uid="uid://d4cxq3lqf46lp"]
 
 [ext_resource type="MeshLibrary" uid="uid://crwpajrpg8nws" path="res://train.tres" id="1_0odxb"]
 [ext_resource type="MeshLibrary" uid="uid://beevc4tctoimq" path="res://industrial.tres" id="1_4c57u"]
@@ -25,6 +25,7 @@
 [ext_resource type="ArrayMesh" uid="uid://di48hxrbkefri" path="res://models/Industrial Buildings/building-n.obj" id="23_kq58d"]
 [ext_resource type="ArrayMesh" uid="uid://dswpmx4oy04cy" path="res://models/Industrial Buildings/building-s.obj" id="24_seu75"]
 [ext_resource type="ArrayMesh" uid="uid://c723xwse1dk8q" path="res://models/Train/train-carriage-tank.obj" id="25_htxhm"]
+[ext_resource type="PackedScene" uid="uid://bu11lkr58eh34" path="res://truck.tscn" id="26_lswn8"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -275,3 +276,6 @@ mesh = ExtResource("24_seu75")
 [node name="TrainCarriageTank" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1.0096208, 0, 0, 0, 0.90861744, -6.4861403, 0, 33.071922)
 mesh = ExtResource("25_htxhm")
+
+[node name="Node3D" parent="." instance=ExtResource("26_lswn8")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.17625308, 0, -1.2469125)
