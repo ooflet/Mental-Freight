@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://crpncnhqiooh7"]
+
+[ext_resource type="PackedScene" uid="uid://8knjfelrldjj" path="res://scenes/map.tscn" id="1_yqeox"]
+[ext_resource type="FontFile" uid="uid://dcvfedq4pboy2" path="res://fonts/BaiJamjuree-Bold.ttf" id="2_con2f"]
+[ext_resource type="Texture2D" uid="uid://cojx685jxvg38" path="res://images/play.png" id="3_mhnvy"]
+[ext_resource type="Script" uid="uid://cf7784rut5eeg" path="res://scenes/start.gd" id="4_4ytvr"]
+[ext_resource type="PackedScene" uid="uid://4e2lixobg4l0" path="res://scenes/scene_transition_rect.tscn" id="5_g3eks"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SceneTransitionRect" parent="." instance=ExtResource("5_g3eks")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Node3D" parent="." instance=ExtResource("1_yqeox")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.9659258, 0, 0.25881913, 0, 1, 0, -0.25881913, 0, -0.9659258, -4.4016747, 0.4797597, -2.3254004)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 55.0
+offset_top = -146.0
+offset_right = 584.0
+offset_bottom = -43.0
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 20
+theme_override_fonts/font = ExtResource("2_con2f")
+theme_override_font_sizes/font_size = 75
+text = "Mental Freight"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -167.0
+offset_top = -179.99994
+offset_right = -17.0
+offset_bottom = -24.999939
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.65, 0.65)
+pivot_offset = Vector2(75, 75)
+texture_normal = ExtResource("3_mhnvy")
+script = ExtResource("4_4ytvr")

@@ -1,0 +1,519 @@
+[gd_scene load_steps=104 format=3 uid="uid://4jpueo4em4vl"]
+
+[ext_resource type="ArrayMesh" uid="uid://b0uvw3iilxs6u" path="res://models/Train/railroad-corner-large-ramp.obj" id="1_yescx"]
+[ext_resource type="ArrayMesh" uid="uid://b0a437l0b38sq" path="res://models/Train/railroad-corner-large.obj" id="2_yydj4"]
+[ext_resource type="ArrayMesh" uid="uid://dx2thfe6ie23s" path="res://models/Train/railroad-corner-small-ramp.obj" id="3_kufu3"]
+[ext_resource type="ArrayMesh" uid="uid://d1dqvy05yahjb" path="res://models/Train/railroad-corner-small.obj" id="4_5fglg"]
+[ext_resource type="ArrayMesh" uid="uid://b4btua3pcxr5j" path="res://models/Train/railroad-curve.obj" id="5_34otm"]
+[ext_resource type="ArrayMesh" uid="uid://bvka21c6girku" path="res://models/Train/railroad-damaged-corner-large-ramp.obj" id="6_47fg3"]
+[ext_resource type="ArrayMesh" uid="uid://cxpshvph13rto" path="res://models/Train/railroad-damaged-corner-large.obj" id="7_umu2l"]
+[ext_resource type="ArrayMesh" uid="uid://c7qwcfkvtbth7" path="res://models/Train/railroad-damaged-corner-small-ramp.obj" id="8_mbuxd"]
+[ext_resource type="ArrayMesh" uid="uid://dp6xlujkspox6" path="res://models/Train/railroad-damaged-corner-small.obj" id="9_ab2lp"]
+[ext_resource type="ArrayMesh" uid="uid://207vnows8ud" path="res://models/Train/railroad-damaged-curve.obj" id="10_rovpg"]
+[ext_resource type="ArrayMesh" uid="uid://bmp724ak5cxu" path="res://models/Train/railroad-damaged-straight-bend-large.obj" id="11_nyhll"]
+[ext_resource type="ArrayMesh" uid="uid://ce5hgfkve3q5q" path="res://models/Train/railroad-damaged-straight-bend.obj" id="12_yyuj6"]
+[ext_resource type="ArrayMesh" uid="uid://dbre6dcjty5fq" path="res://models/Train/railroad-damaged-straight-bump-down.obj" id="13_umaft"]
+[ext_resource type="ArrayMesh" uid="uid://dgfckm77jdwfv" path="res://models/Train/railroad-damaged-straight-bump-up.obj" id="14_qwrpu"]
+[ext_resource type="ArrayMesh" uid="uid://nim51fnfy3bf" path="res://models/Train/railroad-damaged-straight-hill-beginning.obj" id="15_hoa8s"]
+[ext_resource type="ArrayMesh" uid="uid://dev8dod7d8c0o" path="res://models/Train/railroad-damaged-straight-hill-complete-half.obj" id="16_j12en"]
+[ext_resource type="ArrayMesh" uid="uid://cf8rr26mhrlfe" path="res://models/Train/railroad-damaged-straight-hill-complete.obj" id="17_vhb44"]
+[ext_resource type="ArrayMesh" uid="uid://cc5k0oxxipf2p" path="res://models/Train/railroad-damaged-straight-hill-end.obj" id="18_sht2j"]
+[ext_resource type="ArrayMesh" uid="uid://dh8sgwoudt0jw" path="res://models/Train/railroad-damaged-straight-skew-left-side.obj" id="19_345vp"]
+[ext_resource type="ArrayMesh" uid="uid://d0cgn41jnrp0u" path="res://models/Train/railroad-damaged-straight-skew-left.obj" id="20_n3dxc"]
+[ext_resource type="ArrayMesh" uid="uid://bmtnpdr1o4cwb" path="res://models/Train/railroad-damaged-straight-skew-right-side.obj" id="21_78lnw"]
+[ext_resource type="ArrayMesh" uid="uid://c475p1oa2vkuk" path="res://models/Train/railroad-damaged-straight-skew-right.obj" id="22_yu01r"]
+[ext_resource type="ArrayMesh" uid="uid://td5mll3tntwm" path="res://models/Train/railroad-damaged-straight.obj" id="23_o55nx"]
+[ext_resource type="ArrayMesh" uid="uid://c1n6gl17vg6fl" path="res://models/Train/railroad-rail-corner-large-ramp.obj" id="24_5rbt3"]
+[ext_resource type="ArrayMesh" uid="uid://iim3y35yn8ln" path="res://models/Train/railroad-rail-corner-large.obj" id="25_dk84k"]
+[ext_resource type="ArrayMesh" uid="uid://tukyhidd5wt0" path="res://models/Train/railroad-rail-corner-small-ramp.obj" id="26_uqsco"]
+[ext_resource type="ArrayMesh" uid="uid://cjv68wpstfwnq" path="res://models/Train/railroad-rail-corner-small.obj" id="27_2y5de"]
+[ext_resource type="ArrayMesh" uid="uid://dhyjjpqbgtoyb" path="res://models/Train/railroad-rail-curve.obj" id="28_m5y2c"]
+[ext_resource type="ArrayMesh" uid="uid://diwrou6lr6y5o" path="res://models/Train/railroad-rail-straight-bend-large.obj" id="29_u67yj"]
+[ext_resource type="ArrayMesh" uid="uid://1yy6hd3iuaax" path="res://models/Train/railroad-rail-straight-bend.obj" id="30_4fj7i"]
+[ext_resource type="ArrayMesh" uid="uid://8fnfyflaib3a" path="res://models/Train/railroad-rail-straight-bump-down.obj" id="31_4djy7"]
+[ext_resource type="ArrayMesh" uid="uid://b7hsfuo003sp8" path="res://models/Train/railroad-rail-straight-bump-up.obj" id="32_02qk4"]
+[ext_resource type="ArrayMesh" uid="uid://e4tehsos1wjs" path="res://models/Train/railroad-rail-straight-hill-beginning.obj" id="33_1xc6a"]
+[ext_resource type="ArrayMesh" uid="uid://ovyf3it4nqta" path="res://models/Train/railroad-rail-straight-hill-complete-half.obj" id="34_lcu80"]
+[ext_resource type="ArrayMesh" uid="uid://cfw0cnf7dlnn8" path="res://models/Train/railroad-rail-straight-hill-complete.obj" id="35_3nsdm"]
+[ext_resource type="ArrayMesh" uid="uid://dt4x5q4d8mt7c" path="res://models/Train/railroad-rail-straight-hill-end.obj" id="36_jgq7v"]
+[ext_resource type="ArrayMesh" uid="uid://b4ln8rs8h6ucd" path="res://models/Train/railroad-rail-straight-skew-left-side.obj" id="37_sn5g6"]
+[ext_resource type="ArrayMesh" uid="uid://bg5x777jnqnt5" path="res://models/Train/railroad-rail-straight-skew-left.obj" id="38_wdsil"]
+[ext_resource type="ArrayMesh" uid="uid://c6ok871mrqvvd" path="res://models/Train/railroad-rail-straight-skew-right-side.obj" id="39_0wv7d"]
+[ext_resource type="ArrayMesh" uid="uid://dayjubqgkko7j" path="res://models/Train/railroad-rail-straight-skew-right.obj" id="40_u6fli"]
+[ext_resource type="ArrayMesh" uid="uid://dleqh7f5h7w8y" path="res://models/Train/railroad-rail-straight.obj" id="41_upy5r"]
+[ext_resource type="ArrayMesh" uid="uid://bvrfkhh0v4mm0" path="res://models/Train/railroad-straight-bend-large.obj" id="42_2wkfq"]
+[ext_resource type="ArrayMesh" uid="uid://bo333kxp77lq8" path="res://models/Train/railroad-straight-bend.obj" id="43_ukksd"]
+[ext_resource type="ArrayMesh" uid="uid://dpeigomej3acr" path="res://models/Train/railroad-straight-bump-down.obj" id="44_n8f2l"]
+[ext_resource type="ArrayMesh" uid="uid://c4fccpblyrkyq" path="res://models/Train/railroad-straight-bump-up.obj" id="45_61qua"]
+[ext_resource type="ArrayMesh" uid="uid://bvqot5oaegbrn" path="res://models/Train/railroad-straight-hill-beginning.obj" id="46_tcnon"]
+[ext_resource type="ArrayMesh" uid="uid://bd1jrppssrirs" path="res://models/Train/railroad-straight-hill-complete-half.obj" id="47_l3m1k"]
+[ext_resource type="ArrayMesh" uid="uid://d155i13pox6le" path="res://models/Train/railroad-straight-hill-complete.obj" id="48_w7ysn"]
+[ext_resource type="ArrayMesh" uid="uid://d27ht7ewk6lqm" path="res://models/Train/railroad-straight-hill-end.obj" id="49_hsh7q"]
+[ext_resource type="ArrayMesh" uid="uid://d7p4e64rq5lo" path="res://models/Train/railroad-straight-skew-left-side.obj" id="50_ycd1r"]
+[ext_resource type="ArrayMesh" uid="uid://3wt68u01i786" path="res://models/Train/railroad-straight-skew-left.obj" id="51_h51vk"]
+[ext_resource type="ArrayMesh" uid="uid://crnk133n27cjp" path="res://models/Train/railroad-straight-skew-right-side.obj" id="52_g2bhn"]
+[ext_resource type="ArrayMesh" uid="uid://dcwyeann0gbv4" path="res://models/Train/railroad-straight-skew-right.obj" id="53_r05xm"]
+[ext_resource type="ArrayMesh" uid="uid://cdpqp53nlcnny" path="res://models/Train/railroad-straight.obj" id="54_4jiiv"]
+[ext_resource type="ArrayMesh" uid="uid://djtkluwycyc14" path="res://models/Train/spline-segment.obj" id="55_31xhh"]
+[ext_resource type="ArrayMesh" uid="uid://csj80bifaoaet" path="res://models/Train/spline-track-damaged.obj" id="56_2twot"]
+[ext_resource type="ArrayMesh" uid="uid://cmiaq1lhqee5e" path="res://models/Train/spline-track.obj" id="57_veeb5"]
+[ext_resource type="ArrayMesh" uid="uid://g5idk8wb76nj" path="res://models/Train/track-detailed.obj" id="58_p3x4t"]
+[ext_resource type="ArrayMesh" uid="uid://cr36gljbsdo2m" path="res://models/Train/track-single-detailed.obj" id="59_4nmqe"]
+[ext_resource type="ArrayMesh" uid="uid://b4uyaq2ig38km" path="res://models/Train/track-single.obj" id="60_a64ej"]
+[ext_resource type="ArrayMesh" uid="uid://cll5uhbepxwik" path="res://models/Train/track.obj" id="61_1vkv4"]
+[ext_resource type="ArrayMesh" uid="uid://b3pno8mt215ss" path="res://models/Train/train-carriage-box.obj" id="62_yrkl1"]
+[ext_resource type="ArrayMesh" uid="uid://crkmmm6d2q8us" path="res://models/Train/train-carriage-coal.obj" id="63_w3xfj"]
+[ext_resource type="ArrayMesh" uid="uid://t3jw667iv4yg" path="res://models/Train/train-carriage-container-blue.obj" id="64_0g48g"]
+[ext_resource type="ArrayMesh" uid="uid://dpsnlaliipnbw" path="res://models/Train/train-carriage-container-green.obj" id="65_1mbcg"]
+[ext_resource type="ArrayMesh" uid="uid://bhfschi51okad" path="res://models/Train/train-carriage-container-red.obj" id="66_jlna7"]
+[ext_resource type="ArrayMesh" uid="uid://dyrgxd8bjooey" path="res://models/Train/train-carriage-dirt.obj" id="67_6vwjs"]
+[ext_resource type="ArrayMesh" uid="uid://b66r7tdc72dk" path="res://models/Train/train-carriage-flatbed-wood.obj" id="68_fiq7s"]
+[ext_resource type="ArrayMesh" uid="uid://bwxedcp2i16qx" path="res://models/Train/train-carriage-flatbed.obj" id="69_4fbim"]
+[ext_resource type="ArrayMesh" uid="uid://xsiyycfag2ys" path="res://models/Train/train-carriage-lumber.obj" id="70_0684y"]
+[ext_resource type="ArrayMesh" uid="uid://chafax8q226tw" path="res://models/Train/train-carriage-tank-large.obj" id="71_hb7qe"]
+[ext_resource type="ArrayMesh" uid="uid://c723xwse1dk8q" path="res://models/Train/train-carriage-tank.obj" id="72_8dstr"]
+[ext_resource type="ArrayMesh" uid="uid://7vr54vegm008" path="res://models/Train/train-carriage-wood.obj" id="73_3yrba"]
+[ext_resource type="ArrayMesh" uid="uid://dygyp5anri37h" path="res://models/Train/train-connector.obj" id="74_lvxfx"]
+[ext_resource type="ArrayMesh" uid="uid://cd1tdknivswdi" path="res://models/Train/train-diesel-a.obj" id="75_rfuak"]
+[ext_resource type="ArrayMesh" uid="uid://b8xdjl7fpoy0a" path="res://models/Train/train-diesel-b.obj" id="76_6h40f"]
+[ext_resource type="ArrayMesh" uid="uid://dlbnjsrkxo0xu" path="res://models/Train/train-diesel-box-a.obj" id="77_vwii4"]
+[ext_resource type="ArrayMesh" uid="uid://cwy31t6046mpu" path="res://models/Train/train-diesel-box-b.obj" id="78_wmopp"]
+[ext_resource type="ArrayMesh" uid="uid://dx5v3816i3xls" path="res://models/Train/train-diesel-box-c.obj" id="79_km24m"]
+[ext_resource type="ArrayMesh" uid="uid://ddhvr4o4jjxsg" path="res://models/Train/train-diesel-c.obj" id="80_r2yii"]
+[ext_resource type="ArrayMesh" uid="uid://ctiuhbhlnptdo" path="res://models/Train/train-electric-bullet-a.obj" id="81_0pfhq"]
+[ext_resource type="ArrayMesh" uid="uid://b2i44j6q0h1fw" path="res://models/Train/train-electric-bullet-b.obj" id="82_7fbqg"]
+[ext_resource type="ArrayMesh" uid="uid://7lakfm1x0g3r" path="res://models/Train/train-electric-bullet-c.obj" id="83_cdtp8"]
+[ext_resource type="ArrayMesh" uid="uid://l3tu7hx30vss" path="res://models/Train/train-electric-city-a.obj" id="84_5rjpd"]
+[ext_resource type="ArrayMesh" uid="uid://b428lhfp31bcl" path="res://models/Train/train-electric-city-b.obj" id="85_88ofa"]
+[ext_resource type="ArrayMesh" uid="uid://b87affhuto1xn" path="res://models/Train/train-electric-city-c.obj" id="86_af57p"]
+[ext_resource type="ArrayMesh" uid="uid://d4c1acfvv72j4" path="res://models/Train/train-electric-double-a.obj" id="87_h4y73"]
+[ext_resource type="ArrayMesh" uid="uid://hfc3raaiev81" path="res://models/Train/train-electric-double-b.obj" id="88_sncat"]
+[ext_resource type="ArrayMesh" uid="uid://ctpv6g75nls48" path="res://models/Train/train-electric-double-c.obj" id="89_xgk3f"]
+[ext_resource type="ArrayMesh" uid="uid://b8w8ynwnpcggl" path="res://models/Train/train-electric-square-a.obj" id="90_wx1y3"]
+[ext_resource type="ArrayMesh" uid="uid://8ganj0wsiop4" path="res://models/Train/train-electric-square-b.obj" id="91_mmpbv"]
+[ext_resource type="ArrayMesh" uid="uid://dilonhet8yhb6" path="res://models/Train/train-electric-square-c.obj" id="92_h41at"]
+[ext_resource type="ArrayMesh" uid="uid://cpp7imjvnb80t" path="res://models/Train/train-electric-subway-a.obj" id="93_mudyn"]
+[ext_resource type="ArrayMesh" uid="uid://pktiaur8pa5t" path="res://models/Train/train-electric-subway-b.obj" id="94_bhy67"]
+[ext_resource type="ArrayMesh" uid="uid://dkoxb8rcj8b1a" path="res://models/Train/train-electric-subway-c.obj" id="95_r2eut"]
+[ext_resource type="ArrayMesh" uid="uid://brx7wpfqhsjdd" path="res://models/Train/train-locomotive-a.obj" id="96_7rjqr"]
+[ext_resource type="ArrayMesh" uid="uid://c3adqwgk6w5qf" path="res://models/Train/train-locomotive-b.obj" id="97_p8dgd"]
+[ext_resource type="ArrayMesh" uid="uid://dgmnd6wqcfgfy" path="res://models/Train/train-locomotive-c.obj" id="98_hueb6"]
+[ext_resource type="ArrayMesh" uid="uid://dg224gr76iqdt" path="res://models/Train/train-locomotive-passenger-a.obj" id="99_ejrk1"]
+[ext_resource type="ArrayMesh" uid="uid://ilmdx823p41o" path="res://models/Train/train-locomotive-passenger-b.obj" id="100_7ssrv"]
+[ext_resource type="ArrayMesh" uid="uid://c0nrgpht2ssw8" path="res://models/Train/train-tram-classic.obj" id="101_wvsu5"]
+[ext_resource type="ArrayMesh" uid="uid://b7lcuq81rhcvf" path="res://models/Train/train-tram-modern.obj" id="102_aedmr"]
+[ext_resource type="ArrayMesh" uid="uid://cfg8tb3bqnb50" path="res://models/Train/train-tram-round.obj" id="103_yckwq"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RailroadCornerLargeRamp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("1_yescx")
+
+[node name="RailroadCornerLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("2_yydj4")
+
+[node name="RailroadCornerSmallRamp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("3_kufu3")
+
+[node name="RailroadCornerSmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("4_5fglg")
+
+[node name="RailroadCurve" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("5_34otm")
+
+[node name="RailroadDamagedCornerLargeRamp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("6_47fg3")
+
+[node name="RailroadDamagedCornerLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("7_umu2l")
+
+[node name="RailroadDamagedCornerSmallRamp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("8_mbuxd")
+
+[node name="RailroadDamagedCornerSmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("9_ab2lp")
+
+[node name="RailroadDamagedCurve" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("10_rovpg")
+
+[node name="RailroadDamagedStraightBendLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("11_nyhll")
+
+[node name="RailroadDamagedStraightBend" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("12_yyuj6")
+
+[node name="RailroadDamagedStraightBumpDown" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("13_umaft")
+
+[node name="RailroadDamagedStraightBumpUp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("14_qwrpu")
+
+[node name="RailroadDamagedStraightHillBeginning" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("15_hoa8s")
+
+[node name="RailroadDamagedStraightHillCompleteHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("16_j12en")
+
+[node name="RailroadDamagedStraightHillComplete" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("17_vhb44")
+
+[node name="RailroadDamagedStraightHillEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("18_sht2j")
+
+[node name="RailroadDamagedStraightSkewLeftSide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("19_345vp")
+
+[node name="RailroadDamagedStraightSkewLeft" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("20_n3dxc")
+
+[node name="RailroadDamagedStraightSkewRightSide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("21_78lnw")
+
+[node name="RailroadDamagedStraightSkewRight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("22_yu01r")
+
+[node name="RailroadDamagedStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("23_o55nx")
+
+[node name="RailroadRailCornerLargeRamp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("24_5rbt3")
+
+[node name="RailroadRailCornerLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("25_dk84k")
+
+[node name="RailroadRailCornerSmallRamp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("26_uqsco")
+
+[node name="RailroadRailCornerSmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("27_2y5de")
+
+[node name="RailroadRailCurve" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("28_m5y2c")
+
+[node name="RailroadRailStraightBendLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("29_u67yj")
+
+[node name="RailroadRailStraightBend" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("30_4fj7i")
+
+[node name="RailroadRailStraightBumpDown" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("31_4djy7")
+
+[node name="RailroadRailStraightBumpUp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("32_02qk4")
+
+[node name="RailroadRailStraightHillBeginning" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("33_1xc6a")
+
+[node name="RailroadRailStraightHillCompleteHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("34_lcu80")
+
+[node name="RailroadRailStraightHillComplete" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("35_3nsdm")
+
+[node name="RailroadRailStraightHillEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("36_jgq7v")
+
+[node name="RailroadRailStraightSkewLeftSide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("37_sn5g6")
+
+[node name="RailroadRailStraightSkewLeft" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("38_wdsil")
+
+[node name="RailroadRailStraightSkewRightSide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("39_0wv7d")
+
+[node name="RailroadRailStraightSkewRight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("40_u6fli")
+
+[node name="RailroadRailStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("41_upy5r")
+
+[node name="RailroadStraightBendLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("42_2wkfq")
+
+[node name="RailroadStraightBend" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("43_ukksd")
+
+[node name="RailroadStraightBumpDown" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("44_n8f2l")
+
+[node name="RailroadStraightBumpUp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("45_61qua")
+
+[node name="RailroadStraightHillBeginning" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("46_tcnon")
+
+[node name="RailroadStraightHillCompleteHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("47_l3m1k")
+
+[node name="RailroadStraightHillComplete" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("48_w7ysn")
+
+[node name="RailroadStraightHillEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("49_hsh7q")
+
+[node name="RailroadStraightSkewLeftSide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("50_ycd1r")
+
+[node name="RailroadStraightSkewLeft" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("51_h51vk")
+
+[node name="RailroadStraightSkewRightSide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("52_g2bhn")
+
+[node name="RailroadStraightSkewRight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("53_r05xm")
+
+[node name="RailroadStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("54_4jiiv")
+
+[node name="SplineSegment" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("55_31xhh")
+
+[node name="SplineTrackDamaged" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("56_2twot")
+
+[node name="SplineTrack" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("57_veeb5")
+
+[node name="TrackDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("58_p3x4t")
+
+[node name="TrackSingleDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("59_4nmqe")
+
+[node name="TrackSingle" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("60_a64ej")
+
+[node name="Track" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("61_1vkv4")
+
+[node name="TrainCarriageBox" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("62_yrkl1")
+
+[node name="TrainCarriageCoal" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("63_w3xfj")
+
+[node name="TrainCarriageContainerBlue" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("64_0g48g")
+
+[node name="TrainCarriageContainerGreen" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("65_1mbcg")
+
+[node name="TrainCarriageContainerRed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("66_jlna7")
+
+[node name="TrainCarriageDirt" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("67_6vwjs")
+
+[node name="TrainCarriageFlatbedWood" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("68_fiq7s")
+
+[node name="TrainCarriageFlatbed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("69_4fbim")
+
+[node name="TrainCarriageLumber" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("70_0684y")
+
+[node name="TrainCarriageTankLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("71_hb7qe")
+
+[node name="TrainCarriageTank" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("72_8dstr")
+
+[node name="TrainCarriageWood" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("73_3yrba")
+
+[node name="TrainConnector" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("74_lvxfx")
+
+[node name="TrainDieselA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("75_rfuak")
+
+[node name="TrainDieselB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("76_6h40f")
+
+[node name="TrainDieselBoxA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("77_vwii4")
+
+[node name="TrainDieselBoxB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("78_wmopp")
+
+[node name="TrainDieselBoxC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("79_km24m")
+
+[node name="TrainDieselC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("80_r2yii")
+
+[node name="TrainElectricBulletA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("81_0pfhq")
+
+[node name="TrainElectricBulletB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("82_7fbqg")
+
+[node name="TrainElectricBulletC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("83_cdtp8")
+
+[node name="TrainElectricCityA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("84_5rjpd")
+
+[node name="TrainElectricCityB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("85_88ofa")
+
+[node name="TrainElectricCityC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("86_af57p")
+
+[node name="TrainElectricDoubleA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("87_h4y73")
+
+[node name="TrainElectricDoubleB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("88_sncat")
+
+[node name="TrainElectricDoubleC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("89_xgk3f")
+
+[node name="TrainElectricSquareA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("90_wx1y3")
+
+[node name="TrainElectricSquareB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("91_mmpbv")
+
+[node name="TrainElectricSquareC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("92_h41at")
+
+[node name="TrainElectricSubwayA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("93_mudyn")
+
+[node name="TrainElectricSubwayB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("94_bhy67")
+
+[node name="TrainElectricSubwayC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("95_r2eut")
+
+[node name="TrainLocomotiveA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("96_7rjqr")
+
+[node name="TrainLocomotiveB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("97_p8dgd")
+
+[node name="TrainLocomotiveC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("98_hueb6")
+
+[node name="TrainLocomotivePassengerA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("99_ejrk1")
+
+[node name="TrainLocomotivePassengerB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("100_7ssrv")
+
+[node name="TrainTramClassic" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("101_wvsu5")
+
+[node name="TrainTramModern" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("102_aedmr")
+
+[node name="TrainTramRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13632989, 0, -0.18971753)
+mesh = ExtResource("103_yckwq")

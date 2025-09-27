@@ -1,0 +1,211 @@
+[gd_scene load_steps=43 format=3 uid="uid://bxdpari67xp2e"]
+
+[ext_resource type="Script" uid="uid://56l7q4o770fx" path="res://buildings.gd" id="1_2c68v"]
+[ext_resource type="ArrayMesh" uid="uid://cgsba0200y4fd" path="res://models/Buildings/building-a.obj" id="1_ly5f1"]
+[ext_resource type="ArrayMesh" uid="uid://bgfx21vtawx6y" path="res://models/Buildings/building-b.obj" id="2_2c68v"]
+[ext_resource type="ArrayMesh" uid="uid://q0haiwyqehai" path="res://models/Buildings/building-c.obj" id="3_3b0ui"]
+[ext_resource type="ArrayMesh" uid="uid://chpiu8ioeaqvx" path="res://models/Buildings/building-d.obj" id="4_43hn0"]
+[ext_resource type="ArrayMesh" uid="uid://coywdwwoh84mk" path="res://models/Buildings/building-e.obj" id="5_o531u"]
+[ext_resource type="ArrayMesh" uid="uid://bjuuorahjjvfw" path="res://models/Buildings/building-f.obj" id="6_dho1n"]
+[ext_resource type="ArrayMesh" uid="uid://cjrref883thgy" path="res://models/Buildings/building-g.obj" id="7_fbiyb"]
+[ext_resource type="ArrayMesh" uid="uid://cursbkgnhcf63" path="res://models/Buildings/building-h.obj" id="8_utxfo"]
+[ext_resource type="ArrayMesh" uid="uid://4tkml2xug44u" path="res://models/Buildings/building-i.obj" id="9_4ht45"]
+[ext_resource type="ArrayMesh" uid="uid://bdj0vbvnw0n4a" path="res://models/Buildings/building-j.obj" id="10_ml5n4"]
+[ext_resource type="ArrayMesh" uid="uid://jrvht1vpe35" path="res://models/Buildings/building-k.obj" id="11_a376k"]
+[ext_resource type="ArrayMesh" uid="uid://cnywgfijr541x" path="res://models/Buildings/building-l.obj" id="12_5g6ou"]
+[ext_resource type="ArrayMesh" uid="uid://baf100iyr8vga" path="res://models/Buildings/building-m.obj" id="13_0e8tn"]
+[ext_resource type="ArrayMesh" uid="uid://b1q8rrhx6cmnx" path="res://models/Buildings/building-n.obj" id="14_f04oo"]
+[ext_resource type="ArrayMesh" uid="uid://brpk4ot6a783b" path="res://models/Buildings/building-skyscraper-a.obj" id="15_7pyrl"]
+[ext_resource type="ArrayMesh" uid="uid://cm5ds734rlknb" path="res://models/Buildings/building-skyscraper-b.obj" id="16_ilco2"]
+[ext_resource type="ArrayMesh" uid="uid://d0radwtal0n8" path="res://models/Buildings/building-skyscraper-c.obj" id="17_ut8xp"]
+[ext_resource type="ArrayMesh" uid="uid://0cwvcuqjmn86" path="res://models/Buildings/building-skyscraper-d.obj" id="18_308qs"]
+[ext_resource type="ArrayMesh" uid="uid://clppx88sbdp6x" path="res://models/Buildings/building-skyscraper-e.obj" id="19_18w7k"]
+[ext_resource type="ArrayMesh" uid="uid://cfr22balnew0w" path="res://models/Buildings/detail-awning-wide.obj" id="20_eegju"]
+[ext_resource type="ArrayMesh" uid="uid://dxtrd5rcvbtjn" path="res://models/Buildings/detail-awning.obj" id="21_7bhhm"]
+[ext_resource type="ArrayMesh" uid="uid://ds6yskirelbvd" path="res://models/Buildings/detail-overhang-wide.obj" id="22_spnwc"]
+[ext_resource type="ArrayMesh" uid="uid://cg4dqhje1ykpa" path="res://models/Buildings/detail-overhang.obj" id="23_md7eu"]
+[ext_resource type="ArrayMesh" uid="uid://dynjqgebgc8nk" path="res://models/Buildings/detail-parasol-a.obj" id="24_f3vfe"]
+[ext_resource type="ArrayMesh" uid="uid://ckfi8go5033qf" path="res://models/Buildings/detail-parasol-b.obj" id="25_3m7or"]
+[ext_resource type="ArrayMesh" uid="uid://bji5e34e7bp7p" path="res://models/Buildings/low-detail-building-a.obj" id="26_bsmgr"]
+[ext_resource type="ArrayMesh" uid="uid://bou5lr5v8uiri" path="res://models/Buildings/low-detail-building-b.obj" id="27_8f3t5"]
+[ext_resource type="ArrayMesh" uid="uid://c7bfypi2eygwt" path="res://models/Buildings/low-detail-building-c.obj" id="28_j0xr8"]
+[ext_resource type="ArrayMesh" uid="uid://dtsndjj5qw7pp" path="res://models/Buildings/low-detail-building-d.obj" id="29_21bum"]
+[ext_resource type="ArrayMesh" uid="uid://dq4nxlpqjtj3v" path="res://models/Buildings/low-detail-building-e.obj" id="30_fmxh3"]
+[ext_resource type="ArrayMesh" uid="uid://cyrelkkcv0jvp" path="res://models/Buildings/low-detail-building-f.obj" id="31_fb085"]
+[ext_resource type="ArrayMesh" uid="uid://dpq342ghvi73b" path="res://models/Buildings/low-detail-building-g.obj" id="32_h5cgw"]
+[ext_resource type="ArrayMesh" uid="uid://cbyj40o5qvcw" path="res://models/Buildings/low-detail-building-h.obj" id="33_qc7l1"]
+[ext_resource type="ArrayMesh" uid="uid://6tku2u8mkj0d" path="res://models/Buildings/low-detail-building-i.obj" id="34_r01bx"]
+[ext_resource type="ArrayMesh" uid="uid://6nc5cp5m2qbx" path="res://models/Buildings/low-detail-building-j.obj" id="35_7rj1h"]
+[ext_resource type="ArrayMesh" uid="uid://bcmrgf3ubnmj0" path="res://models/Buildings/low-detail-building-k.obj" id="36_hepf3"]
+[ext_resource type="ArrayMesh" uid="uid://dgfhpxmekqnvb" path="res://models/Buildings/low-detail-building-l.obj" id="37_ka6h0"]
+[ext_resource type="ArrayMesh" uid="uid://cgobe3oklj665" path="res://models/Buildings/low-detail-building-m.obj" id="38_d48dl"]
+[ext_resource type="ArrayMesh" uid="uid://ckvr4jwixsmvf" path="res://models/Buildings/low-detail-building-n.obj" id="39_q68be"]
+[ext_resource type="ArrayMesh" uid="uid://d0co5hiiggrc5" path="res://models/Buildings/low-detail-building-wide-a.obj" id="40_mfhch"]
+[ext_resource type="ArrayMesh" uid="uid://b6hilxsqnmx3n" path="res://models/Buildings/low-detail-building-wide-b.obj" id="41_id670"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_2c68v")
+
+[node name="BuildingA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("1_ly5f1")
+
+[node name="BuildingB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("2_2c68v")
+
+[node name="BuildingC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("3_3b0ui")
+
+[node name="BuildingD" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("4_43hn0")
+
+[node name="BuildingE" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("5_o531u")
+
+[node name="BuildingF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("6_dho1n")
+
+[node name="BuildingG" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("7_fbiyb")
+
+[node name="BuildingH" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("8_utxfo")
+
+[node name="BuildingI" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("9_4ht45")
+
+[node name="BuildingJ" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("10_ml5n4")
+
+[node name="BuildingK" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("11_a376k")
+
+[node name="BuildingL" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("12_5g6ou")
+
+[node name="BuildingM" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("13_0e8tn")
+
+[node name="BuildingN" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("14_f04oo")
+
+[node name="BuildingSkyscraperA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("15_7pyrl")
+
+[node name="BuildingSkyscraperB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("16_ilco2")
+
+[node name="BuildingSkyscraperC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("17_ut8xp")
+
+[node name="BuildingSkyscraperD" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("18_308qs")
+
+[node name="BuildingSkyscraperE" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("19_18w7k")
+
+[node name="DetailAwningWide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("20_eegju")
+
+[node name="DetailAwning" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("21_7bhhm")
+
+[node name="DetailOverhangWide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("22_spnwc")
+
+[node name="DetailOverhang" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("23_md7eu")
+
+[node name="DetailParasolA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("24_f3vfe")
+
+[node name="DetailParasolB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("25_3m7or")
+
+[node name="LowDetailBuildingA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("26_bsmgr")
+
+[node name="LowDetailBuildingB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("27_8f3t5")
+
+[node name="LowDetailBuildingC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("28_j0xr8")
+
+[node name="LowDetailBuildingD" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("29_21bum")
+
+[node name="LowDetailBuildingE" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("30_fmxh3")
+
+[node name="LowDetailBuildingF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("31_fb085")
+
+[node name="LowDetailBuildingG" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("32_h5cgw")
+
+[node name="LowDetailBuildingH" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("33_qc7l1")
+
+[node name="LowDetailBuildingI" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("34_r01bx")
+
+[node name="LowDetailBuildingJ" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("35_7rj1h")
+
+[node name="LowDetailBuildingK" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("36_hepf3")
+
+[node name="LowDetailBuildingL" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("37_ka6h0")
+
+[node name="LowDetailBuildingM" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("38_d48dl")
+
+[node name="LowDetailBuildingN" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("39_q68be")
+
+[node name="LowDetailBuildingWideA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("40_mfhch")
+
+[node name="LowDetailBuildingWideB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17505777, 0, 0.18333697)
+mesh = ExtResource("41_id670")

@@ -1,0 +1,259 @@
+[gd_scene load_steps=15 format=3 uid="uid://b5mi6gc2apr8l"]
+
+[ext_resource type="FontFile" uid="uid://dcvfedq4pboy2" path="res://fonts/BaiJamjuree-Bold.ttf" id="1_mfius"]
+[ext_resource type="Texture2D" uid="uid://d1eomakg3eqk1" path="res://images/pause.png" id="2_ynd5l"]
+[ext_resource type="Shader" uid="uid://ciqbpmcps22gm" path="res://scenes/bg.gdshader" id="3_b8iy7"]
+[ext_resource type="Texture2D" uid="uid://m068o8oxyr5r" path="res://images/tile.png" id="4_jqlde"]
+[ext_resource type="Script" uid="uid://frmhwam3267n" path="res://scenes/pause.gd" id="4_p54wi"]
+[ext_resource type="FontFile" uid="uid://dsv8dh5xvyvw5" path="res://fonts/BaiJamjuree-SemiBold.ttf" id="5_08a8y"]
+[ext_resource type="Script" uid="uid://dhr1e01dpdrky" path="res://scenes/tutorial_button.gd" id="6_7yii4"]
+[ext_resource type="Script" uid="uid://bkdun3sy0h42l" path="res://scripts/quit.gd" id="8_p54wi"]
+[ext_resource type="Script" uid="uid://fwuivi68wlj0" path="res://scripts/resume.gd" id="9_xki8e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b8iy7"]
+bg_color = Color(0.1640886, 0.00034935705, 0.36083663, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jqlde"]
+bg_color = Color(0.5019608, 0, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_08a8y"]
+shader = ExtResource("3_b8iy7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7yii4"]
+bg_color = Color(1, 1, 1, 1)
+draw_center = false
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4yt8u"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 12
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="GUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fatigue" type="ProgressBar" parent="."]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 125.0
+offset_right = 400.0
+offset_bottom = 170.0
+theme_override_styles/background = SubResource("StyleBoxFlat_b8iy7")
+theme_override_styles/fill = SubResource("StyleBoxFlat_jqlde")
+value = 1.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="Fatigue"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 15.0
+offset_top = -15.5
+offset_right = 350.0
+offset_bottom = 15.5
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 20
+text = "Fatigue"
+
+[node name="Pause" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -150.0
+offset_top = 50.0
+offset_bottom = 205.0
+grow_horizontal = 0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("2_ynd5l")
+script = ExtResource("4_p54wi")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 631.0
+offset_bottom = 100.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 40
+text = "Quota: 0/10"
+
+[node name="Tutorial" type="TextureRect" parent="."]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_08a8y")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -225.0
+offset_right = 300.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_jqlde")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Panel" type="Panel" parent="Tutorial"]
+layout_mode = 1
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 603.0
+offset_bottom = 453.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7yii4")
+
+[node name="Label" type="Label" parent="Tutorial/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -249.0
+offset_top = 50.0
+offset_right = 249.0
+offset_bottom = 312.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 40
+text = "• Deliver packages
+• Fufil the quota
+• Don't get too fatigued
+• Sacrifice your health or 
+  your paycheck to \"win\""
+
+[node name="Button" type="Button" parent="Tutorial/Panel"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -112.0
+offset_right = 150.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_08a8y")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_4yt8u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4yt8u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4yt8u")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4yt8u")
+text = "OK"
+script = ExtResource("6_7yii4")
+
+[node name="PauseMenu" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="Quit" type="Button" parent="PauseMenu"]
+process_mode = 2
+top_level = true
+z_index = 4
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.5
+offset_top = 8.5
+offset_right = 195.5
+offset_bottom = 141.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 100
+text = "Quit"
+flat = true
+script = ExtResource("8_p54wi")
+
+[node name="Resume" type="Button" parent="PauseMenu"]
+process_mode = 2
+top_level = true
+z_index = 4
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.5
+offset_top = -141.5
+offset_right = 195.5
+offset_bottom = -8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 100
+text = "Resume"
+flat = true
+script = ExtResource("9_xki8e")
