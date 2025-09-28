@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=4 uid="uid://bu11lkr58eh34"]
+[gd_scene load_steps=15 format=4 uid="uid://bu11lkr58eh34"]
 
 [ext_resource type="Script" uid="uid://c81uuek1oogwj" path="res://scripts/vehicle_body_3d.gd" id="1_61ijl"]
 [ext_resource type="PackedScene" uid="uid://byn0xdr5kqtn1" path="res://models/Truck/scene.gltf" id="2_61ijl"]
 [ext_resource type="Script" uid="uid://bumywwixcuu41" path="res://scripts/camera.gd" id="3_s4pd2"]
+[ext_resource type="PackedScene" uid="uid://ddlqq8ngvkq17" path="res://models/Arrow/scene.gltf" id="4_hldv3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_surxc"]
 resource_name = "Material.021"
@@ -245,6 +246,9 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.2, 0)
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="VehicleBody3D"]
 transform = Transform3D(0.3, 0, 0, 0, 0.25, 0, 0, 0, 1.1, 0, 0.25, 0)
 shape = SubResource("BoxShape3D_2lgic")
+
+[node name="NavigationArrow" parent="VehicleBody3D" instance=ExtResource("4_hldv3")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.55, 0)
 
 [node name="CameraArm" type="SpringArm3D" parent="."]
 spring_length = 20.0
