@@ -2,28 +2,44 @@ extends Node3D
 
 @export var packages: int = 0
 @export var quota: int = 10
-@export var target_object: Area3D
 @export var arrow: Node3D
 @export var orientation_offset_deg: float = -90.0  # try 90 or -90
 
+var waypoints: Array = []
+var current_waypoint: Area3D
+
 func _ready() -> void:
+	for child in $Map/CollectionPoints.get_children():
+		waypoints.append(child)
+		
+	set_random_waypoint()
 	$GUI/Tutorial.visible = true
 	#$Prayer.play(Global.prayer_playbacktime.get_playback_time())
 	await get_tree().create_timer(0.1).timeout # setup camera first
+	$Reincarnated.play()
 	get_tree().paused = true
-	target_object = $Map/CollectionPoints/HospitalArea
 	arrow = $Truck/VehicleBody3D/NavigationArrow
 	$Map.point_hit.connect(point_hit)
-	
+
+func set_random_waypoint():
+	var random_waypoint = waypoints.pick_random()
+	print("random ", random_waypoint)
+	if current_waypoint == random_waypoint:
+		set_random_waypoint()
+	else:
+		current_waypoint = random_waypoint
+		print("selected ", random_waypoint)
+
 func point_hit(point):
 	print(point)
-	packages += 1
-	$GUI/Quota.text = "Quota: "+str(packages)+"/"+str(quota)
-	# put near top so you can tweak in the editor
+	if point == current_waypoint.name:
+		packages += 1
+		$GUI/Quota.text = "Quota: "+str(packages)+"/"+str(quota)
+		set_random_waypoint()
 
 func _process(_delta):
-	if target_object and arrow:
-		var dir = target_object.global_transform.origin - arrow.global_transform.origin
+	if current_waypoint and arrow:
+		var dir = current_waypoint.global_transform.origin - arrow.global_transform.origin
 		dir.y = 0
 		if dir.length_squared() < 0.0001:
 			return
@@ -36,3 +52,5 @@ func _process(_delta):
 			parent_yaw = parent.global_transform.basis.get_euler().y
 		var desired_local = desired_global - parent_yaw
 		arrow.rotation.y = desired_local                       # set local yaw directly
+		
+		

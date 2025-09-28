@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://8knjfelrldjj"]
 
-[ext_resource type="PackedScene" uid="uid://cg3m5qnyxjev4" path="res://Sky/sky.tscn" id="1_30iet"]
+[ext_resource type="PackedScene" uid="uid://cg3m5qnyxjev4" path="res://sky/sky.tscn" id="1_30iet"]
 [ext_resource type="Script" uid="uid://da685b8cfqlf6" path="res://scenes/goals.gd" id="1_mkblt"]
 [ext_resource type="MeshLibrary" uid="uid://cac3wocinphjr" path="res://mesh_libraries/foliage.tres" id="2_mkblt"]
 [ext_resource type="MeshLibrary" uid="uid://beevc4tctoimq" path="res://mesh_libraries/industrial.tres" id="4_6ek7f"]
@@ -256,7 +256,7 @@ shape = SubResource("CylinderShape3D_4o3w1")
 
 [node name="HospitalArea" type="Area3D" parent="CollectionPoints"]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5022244, 0.047974586, 0.041042805)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5022244, 0.047974586, 1.0410428)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CollectionPoints/HospitalArea"]
 shape = SubResource("CylinderShape3D_4o3w1")
