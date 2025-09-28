@@ -128,6 +128,7 @@ text = "Quota: 0/10"
 
 [node name="Tutorial" type="TextureRect" parent="."]
 unique_name_in_owner = true
+visible = false
 material = SubResource("ShaderMaterial_08a8y")
 layout_mode = 1
 anchors_preset = 8
@@ -174,7 +175,7 @@ text = "• Deliver packages
 • Fufil the quota
 • Don't get too fatigued
 • Sacrifice your health or 
-  your paycheck to \"win\""
+  your paycheck to win"
 
 [node name="Button" type="Button" parent="Tutorial/Panel"]
 process_mode = 3
@@ -258,3 +259,27 @@ theme_override_font_sizes/font_size = 100
 text = "Resume"
 flat = true
 script = ExtResource("9_xki8e")
+
+[node name="Dialogue" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -290.5
+offset_top = -148.0
+offset_right = 290.5
+offset_bottom = -98.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 40
+text = "Dialogue"
+horizontal_alignment = 1
+vertical_alignment = 1

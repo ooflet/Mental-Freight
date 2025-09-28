@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c28ykjno6bwrc"
+path="res://.godot/imported/Kendrick Lamar - Reincarnated (Instrumental).mp3-9ef2e0abad5c8284bfca9fd9c93fcf3d.mp3str"
+
+[deps]
+
+source_file="res://sounds/Kendrick Lamar - Reincarnated (Instrumental).mp3"
+dest_files=["res://.godot/imported/Kendrick Lamar - Reincarnated (Instrumental).mp3-9ef2e0abad5c8284bfca9fd9c93fcf3d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
