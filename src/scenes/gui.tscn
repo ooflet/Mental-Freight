@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b5mi6gc2apr8l"]
+[gd_scene load_steps=20 format=3 uid="uid://b5mi6gc2apr8l"]
 
 [ext_resource type="FontFile" uid="uid://dcvfedq4pboy2" path="res://fonts/BaiJamjuree-Bold.ttf" id="1_mfius"]
 [ext_resource type="Texture2D" uid="uid://d1eomakg3eqk1" path="res://images/pause.png" id="2_ynd5l"]
@@ -31,6 +31,18 @@ border_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 6
 corner_radius_bottom_left = 6
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p54wi"]
+bg_color = Color(1, 0.57533336, 0.01999998, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 12
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_08a8y"]
 shader = ExtResource("3_b8iy7")
 
@@ -59,6 +71,58 @@ corner_radius_top_right = 12
 corner_radius_bottom_right = 12
 corner_radius_bottom_left = 12
 
+[sub_resource type="Animation" id="Animation_p54wi"]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xki8e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_v3be1"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xqxrh"]
+_data = {
+&"RESET": SubResource("Animation_xki8e"),
+&"fade_in": SubResource("Animation_p54wi"),
+&"fade_out": SubResource("Animation_v3be1")
+}
+
 [node name="GUI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -75,6 +139,7 @@ offset_right = 400.0
 offset_bottom = 170.0
 theme_override_styles/background = SubResource("StyleBoxFlat_b8iy7")
 theme_override_styles/fill = SubResource("StyleBoxFlat_jqlde")
+max_value = 10000.0
 value = 1.0
 show_percentage = false
 
@@ -110,6 +175,53 @@ scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("2_ynd5l")
 script = ExtResource("4_p54wi")
 
+[node name="Working Hours" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -631.0
+offset_top = -150.0
+offset_right = -50.0
+offset_bottom = -100.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 25
+text = "09:00 - 17:00"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Time" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -631.0
+offset_top = -100.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 40
+text = "09:00"
+horizontal_alignment = 2
+
 [node name="Quota" type="Label" parent="."]
 unique_name_in_owner = true
 layout_mode = 1
@@ -124,7 +236,31 @@ theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("1_mfius")
 theme_override_font_sizes/font_size = 40
-text = "Quota: 0/10"
+text = "Quota: 0/5"
+
+[node name="EndShift" type="Button" parent="."]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = -125.0
+offset_right = 300.0
+offset_bottom = -50.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_08a8y")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_p54wi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_p54wi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p54wi")
+theme_override_styles/focus = SubResource("StyleBoxFlat_p54wi")
+text = "End Shift"
 
 [node name="Tutorial" type="TextureRect" parent="."]
 unique_name_in_owner = true
@@ -172,7 +308,7 @@ theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("1_mfius")
 theme_override_font_sizes/font_size = 40
 text = "• Deliver packages
-• Fufil the quota
+• Fulfil the quota
 • Don't get too fatigued
 • Sacrifice your health or 
   your paycheck to win"
@@ -261,6 +397,7 @@ flat = true
 script = ExtResource("9_xki8e")
 
 [node name="Dialogue" type="Label" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -283,3 +420,67 @@ theme_override_font_sizes/font_size = 40
 text = "Dialogue"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Day" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="DayLabel" type="Label" parent="Day"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -290.5
+offset_top = -49.0
+offset_right = 290.5
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 40
+text = "Day 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OverdueParcels" type="Label" parent="Day"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -290.5
+offset_top = 1.0
+offset_right = 290.5
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.75, 0.75, 0.75, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 25
+text = "0 overdue packages"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Day"]
+process_mode = 3
+libraries = {
+&"": SubResource("AnimationLibrary_xqxrh")
+}

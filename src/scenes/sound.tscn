@@ -45,6 +45,7 @@ unique_name_in_owner = true
 process_mode = 3
 stream = ExtResource("1_ii1ul")
 autoplay = true
+parameters/looping = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Prayer"]
 libraries = {
