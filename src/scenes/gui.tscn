@@ -240,6 +240,7 @@ text = "Quota: 0/5"
 
 [node name="EndShift" type="Button" parent="."]
 process_mode = 3
+visible = false
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
