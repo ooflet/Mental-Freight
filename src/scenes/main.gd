@@ -96,9 +96,15 @@ func reset_vehicle():
 func new_day():
 	overtime_triggered = false
 	overdue_packages += quota - packages
+	if overdue_packages >= 25:
+		game_over("packages")
+		return
 	day += 1
 	quota = 5 + 2 * day - 1 + overdue_packages
 	packages = 0
+	fatigue -= 20
+	if fatigue < 0:
+		fatigue = 0
 	$GUI/EndShift.visible = false
 	$GUI/Day/DayLabel.text = "Day "+str(day)
 	$GUI/Day/OverdueParcels.text = str(overdue_packages)+" overdue packages"
@@ -161,6 +167,16 @@ func end_day(timeout = false):
 		arrow.visible = false
 		$GUI/Dialogue.text = "Packages delivered! I should end my shift now"
 
+func game_over(reason):
+	get_tree().paused = true
+	if reason == "fatigue":
+		$GUI/GameOver/Reason.text = "You slept and crashed into a family of four"
+	elif reason == "packages":
+		$GUI/GameOver/Reason.text = "Your boss fired you for not delivering enough packages"
+	
+	$GUI/GameOver.visible = true
+	$GUI/GameOver/AnimationPlayer.play("fade_in")
+
 func point_hit(point):
 	print(point)
 	if point == current_waypoint.name:
@@ -197,6 +213,9 @@ func _process(delta: float) -> void:
 	hours = int(fictional_seconds / 3600) % 24
 	minutes = int((fictional_seconds % 3600) / 60)
 	$GUI/Time.text = "%02d:%02d" % [hours, minutes]
+	
+	if fatigue >= 90:
+		game_over("fatigue")
 	
 	if hours >= 17 and not overtime_triggered:
 		end_day(true)

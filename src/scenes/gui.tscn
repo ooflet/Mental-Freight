@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b5mi6gc2apr8l"]
+[gd_scene load_steps=21 format=3 uid="uid://b5mi6gc2apr8l"]
 
 [ext_resource type="FontFile" uid="uid://dcvfedq4pboy2" path="res://fonts/BaiJamjuree-Bold.ttf" id="1_mfius"]
 [ext_resource type="Texture2D" uid="uid://d1eomakg3eqk1" path="res://images/pause.png" id="2_ynd5l"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://dhr1e01dpdrky" path="res://scenes/tutorial_button.gd" id="6_7yii4"]
 [ext_resource type="Script" uid="uid://bkdun3sy0h42l" path="res://scripts/quit.gd" id="8_p54wi"]
 [ext_resource type="Script" uid="uid://fwuivi68wlj0" path="res://scripts/resume.gd" id="9_xki8e"]
+[ext_resource type="Script" uid="uid://cd5wayioq6jlr" path="res://scenes/GameOver.gd" id="10_xki8e"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b8iy7"]
 bg_color = Color(0.1640886, 0.00034935705, 0.36083663, 1)
@@ -421,6 +422,99 @@ theme_override_font_sizes/font_size = 40
 text = "Dialogue"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="GameOver" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="DayLabel" type="Label" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -290.5
+offset_top = -49.0
+offset_right = 290.5
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 40
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Reason" type="Label" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -290.5
+offset_top = 1.0
+offset_right = 290.5
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.75, 0.75, 0.75, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("1_mfius")
+theme_override_font_sizes/font_size = 25
+text = "Your boss fired you for not delivering enough packages"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GameOver"]
+process_mode = 3
+libraries = {
+&"": SubResource("AnimationLibrary_xqxrh")
+}
+
+[node name="Button" type="Button" parent="GameOver"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -112.0
+offset_right = 150.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_08a8y")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_4yt8u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4yt8u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4yt8u")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4yt8u")
+text = "Restart"
+script = ExtResource("10_xki8e")
 
 [node name="Day" type="ColorRect" parent="."]
 layout_mode = 1
