@@ -7,6 +7,8 @@ extends Node3D
 @export var orientation_offset_deg: float = -90.0  # try 90 or -90
 
 func _ready() -> void:
+	$GUI/Tutorial.visible = true
+	#$Prayer.play(Global.prayer_playbacktime.get_playback_time())
 	await get_tree().create_timer(0.1).timeout # setup camera first
 	get_tree().paused = true
 	target_object = $Map/CollectionPoints/HospitalArea

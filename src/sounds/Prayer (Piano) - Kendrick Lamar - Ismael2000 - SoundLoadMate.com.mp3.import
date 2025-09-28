@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://joxl5mkpy0he"
+path="res://.godot/imported/Prayer (Piano) - Kendrick Lamar - Ismael2000 - SoundLoadMate.com.mp3-aac94b3ac7aed2cb02edfd58e37c6672.mp3str"
+
+[deps]
+
+source_file="res://sounds/Prayer (Piano) - Kendrick Lamar - Ismael2000 - SoundLoadMate.com.mp3"
+dest_files=["res://.godot/imported/Prayer (Piano) - Kendrick Lamar - Ismael2000 - SoundLoadMate.com.mp3-aac94b3ac7aed2cb02edfd58e37c6672.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

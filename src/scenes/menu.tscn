@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://crpncnhqiooh7"]
+[gd_scene load_steps=7 format=3 uid="uid://crpncnhqiooh7"]
 
 [ext_resource type="PackedScene" uid="uid://8knjfelrldjj" path="res://scenes/map.tscn" id="1_yqeox"]
 [ext_resource type="FontFile" uid="uid://dcvfedq4pboy2" path="res://fonts/BaiJamjuree-Bold.ttf" id="2_con2f"]
+[ext_resource type="PackedScene" uid="uid://l1g4toxppx36" path="res://scenes/sound.tscn" id="2_v86rl"]
 [ext_resource type="Texture2D" uid="uid://cojx685jxvg38" path="res://images/play.png" id="3_mhnvy"]
 [ext_resource type="Script" uid="uid://cf7784rut5eeg" path="res://scenes/start.gd" id="4_4ytvr"]
 [ext_resource type="PackedScene" uid="uid://4e2lixobg4l0" path="res://scenes/scene_transition_rect.tscn" id="5_g3eks"]
@@ -13,6 +14,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Sound" parent="." instance=ExtResource("2_v86rl")]
 
 [node name="SceneTransitionRect" parent="." instance=ExtResource("5_g3eks")]
 unique_name_in_owner = true

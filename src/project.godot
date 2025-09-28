@@ -15,6 +15,11 @@ run/main_scene="uid://crpncnhqiooh7"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://scripts/global.gd"
+Sound="*res://scenes/sound.tscn"
+
 [display]
 
 window/stretch/aspect="ignore"
