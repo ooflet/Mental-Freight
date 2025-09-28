@@ -11,6 +11,8 @@ extends Node3D
 @export var top_color: Color = Color(0, 1, 0, 0)     # transparent
 @export var height: float = 2.0                      # matches cube_size.y / 2
 
+var origin_transform: Transform3D
+
 var fatigue: float = 0.0
 var fatigue_rate: float = 1 # 0.01 every 0.1s = 0.1 per second
 
@@ -72,6 +74,8 @@ func make_indicator(area):
 	
 func reset_vehicle():
 	var vehicle = $Truck/VehicleBody3D
+	var position = Vector3(0, 0, 0)
+	var rotation_degrees = Vector3(0, 0, 0)
 	# Convert degrees to radians
 	var rotation_radians = rotation_degrees * deg_to_rad(1)
 
@@ -82,7 +86,7 @@ func reset_vehicle():
 	new_basis = new_basis.rotated(Vector3.FORWARD, rotation_radians.z)
 
 	# Set the global transform
-	vehicle.global_transform = Transform3D(new_basis, position)
+	vehicle.transform = origin_transform
 
 	# Stop all movement
 	vehicle.linear_velocity = Vector3.ZERO
@@ -93,6 +97,7 @@ func new_day():
 	day += 1
 	quota = 5 + 2 * day - 1 + overdue_packages
 	packages = 0
+	$GUI/EndShift.visible = false
 	$GUI/Day/DayLabel.text = "Day "+str(day)
 	$GUI/Day/OverdueParcels.text = str(overdue_packages)+" overdue packages"
 	await get_tree().create_timer(0.1).timeout # setup camera first
@@ -102,6 +107,7 @@ func new_day():
 	set_random_waypoint()
 	reset_vehicle()
 	$GUI/Quota.text = "Quota: 0/"+str(quota)
+	await get_tree().create_timer(0.1).timeout
 	get_tree().paused = true
 	await get_tree().create_timer(3).timeout
 	$GUI/Day/AnimationPlayer.play("fade_out")
@@ -110,6 +116,8 @@ func new_day():
 	get_tree().paused = false
 
 func _ready() -> void:
+	origin_transform = $Truck/VehicleBody3D.transform
+	
 	for child in $Map/CollectionPoints.get_children():
 		waypoints.append(child)
 		
@@ -141,10 +149,15 @@ func set_random_waypoint():
 		current_indicator = make_indicator(current_waypoint)
 		print("selected ", random_waypoint)
 		
-func end_day():
-	arrow.visible = false
+func end_day(timeout = false):
+	$GUI/EndShift.visible = true
 	$GUI/Dialogue.visible = true
-	$GUI/Dialogue.text = "Packages delivered... I should end my shift now"
+	
+	if timeout:
+		$GUI/Dialogue.text = "I'm getting tired... I don't want to go overtime"
+	else:
+		arrow.visible = false
+		$GUI/Dialogue.text = "Packages delivered! I should end my shift now"
 
 func point_hit(point):
 	print(point)
