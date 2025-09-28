@@ -25,6 +25,7 @@ var day = 1
 var fictional_seconds: int = 9 * 3600  # start at 6:00
 var hours: int = 0
 var minutes: int = 0
+var overtime_triggered: bool = false
 
 func make_indicator(area):
 	var cube = MeshInstance3D.new()
@@ -93,6 +94,7 @@ func reset_vehicle():
 	vehicle.angular_velocity = Vector3.ZERO
 
 func new_day():
+	overtime_triggered = false
 	overdue_packages += quota - packages
 	day += 1
 	quota = 5 + 2 * day - 1 + overdue_packages
@@ -192,8 +194,10 @@ func _process(delta: float) -> void:
 		arrow.rotation.y = desired_local                       # set local yaw directly
 		
 	fictional_seconds += delta * 240  # 0.5 sec = 1 min => 120x speed (1 sec = 2 min)
-
 	hours = int(fictional_seconds / 3600) % 24
 	minutes = int((fictional_seconds % 3600) / 60)
-
 	$GUI/Time.text = "%02d:%02d" % [hours, minutes]
+	
+	if hours >= 17 and not overtime_triggered:
+		end_day(true)
+		overtime_triggered = true
