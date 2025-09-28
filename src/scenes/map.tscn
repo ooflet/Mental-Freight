@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://8knjfelrldjj"]
+[gd_scene load_steps=23 format=3 uid="uid://8knjfelrldjj"]
 
 [ext_resource type="PackedScene" uid="uid://cg3m5qnyxjev4" path="res://Sky/sky.tscn" id="1_30iet"]
 [ext_resource type="Script" uid="uid://da685b8cfqlf6" path="res://scenes/goals.gd" id="1_mkblt"]
@@ -7,7 +7,9 @@
 [ext_resource type="MeshLibrary" uid="uid://csivfkl1s8u6w" path="res://mesh_libraries/buildings.tres" id="5_4qxv8"]
 [ext_resource type="MeshLibrary" uid="uid://hjc1y4hwnmfj" path="res://mesh_libraries/road.tres" id="6_fq663"]
 [ext_resource type="ArrayMesh" uid="uid://dge8fp1lqgsb0" path="res://models/Industrial Buildings/chimney-large.obj" id="7_mniao"]
+[ext_resource type="ArrayMesh" uid="uid://b36kd48x75grb" path="res://models/Industrial Buildings/chimney-basic.obj" id="8_mo32q"]
 [ext_resource type="ArrayMesh" uid="uid://brhjt4vqn50rj" path="res://models/Industrial Buildings/chimney-small.obj" id="8_yfm5w"]
+[ext_resource type="ArrayMesh" uid="uid://l01xeuvtymk0" path="res://models/Roads/road-curve.obj" id="9_6k6j1"]
 [ext_resource type="ArrayMesh" uid="uid://bf15xalkjj61i" path="res://models/Roads/bridge-pillar-wide.obj" id="11_lhdcv"]
 [ext_resource type="ArrayMesh" uid="uid://brpk4ot6a783b" path="res://models/Buildings/building-skyscraper-a.obj" id="12_cgoaf"]
 [ext_resource type="ArrayMesh" uid="uid://baf100iyr8vga" path="res://models/Buildings/building-m.obj" id="13_mwr4f"]
@@ -85,6 +87,26 @@ mesh = ExtResource("7_mniao")
 [node name="ChimneyLarge" type="MeshInstance3D" parent="StaticBody3D/Baseplate/ChimneyLarge"]
 transform = Transform3D(1.210632, 0, 0, 0, 1.0216472, 0, 0, 0, 1.3472941, 1.9489846, 0.18310396, 0.24821377)
 mesh = ExtResource("7_mniao")
+
+[node name="ChimneyBasic" type="MeshInstance3D" parent="StaticBody3D/Baseplate/ChimneyLarge"]
+transform = Transform3D(-1.0109619e-07, 0, -0.8260149, 0, 6.2027483, 0, 2.078212, 0, -3.244384e-08, 10.096485, 0.017016117, 4.9769692)
+mesh = ExtResource("8_mo32q")
+
+[node name="ChimneyBasic2" type="MeshInstance3D" parent="StaticBody3D/Baseplate/ChimneyLarge"]
+transform = Transform3D(-1.0109619e-07, 0, -0.8260149, 0, 6.2027483, 0, 2.078212, 0, -3.244384e-08, 10.096485, 0.017016117, 4.9769692)
+mesh = ExtResource("8_mo32q")
+
+[node name="ChimneyBasic" type="MeshInstance3D" parent="StaticBody3D/Baseplate/ChimneyLarge/ChimneyBasic2"]
+transform = Transform3D(-1.01096184e-07, 0, -0.8260149, 0, 0.975679, 0, 2.078212, 0, -3.244384e-08, -0.58746934, 0.055208, 17.769638)
+mesh = ExtResource("8_mo32q")
+
+[node name="ChimneyBasic" type="MeshInstance3D" parent="StaticBody3D/Baseplate/ChimneyLarge/ChimneyBasic2/ChimneyBasic"]
+transform = Transform3D(-5.485111e-08, 0, -0.8260148, 0, 0.975679, 0, 1.1275623, 0, -3.244385e-08, -4.071964, -0.07595606, 3.8477378)
+mesh = ExtResource("8_mo32q")
+
+[node name="RoadCurve" type="MeshInstance3D" parent="StaticBody3D/Baseplate/ChimneyLarge/ChimneyBasic2/ChimneyBasic"]
+transform = Transform3D(-6.749979e-09, 0, 0.48118284, 0, 0.22520164, 0, -0.4323743, 0, -5.8892102e-08, -20.6749, -0.056584187, 0.75294733)
+mesh = ExtResource("9_6k6j1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
@@ -238,3 +260,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5022244, 0.047974586, 0.041
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CollectionPoints/HospitalArea"]
 shape = SubResource("CylinderShape3D_4o3w1")
+
+[node name="RoadStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.2395072, 0, 0, 0, 1, 0, 0, 0, 1, 1.3905654, 0, -23.5907)
+mesh = ExtResource("14_1qn5a")
+
+[node name="RoadCurve" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.1241821, -4.7683716e-07, -23.086458)
+mesh = ExtResource("9_6k6j1")
+
+[node name="RoadStraight2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.00089835e-07, 0, -0.99999994, 0, 1, 0, 2.2897885, 0, -4.3711385e-08, -1.6233957, -0.00017288327, -20.944183)
+mesh = ExtResource("14_1qn5a")
+
+[node name="RoadCurveIntersection4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.124146, 0, -18.835592)
+mesh = ExtResource("18_g8nl4")
